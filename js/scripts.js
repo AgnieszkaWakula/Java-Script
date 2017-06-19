@@ -1,19 +1,12 @@
 // scripts.js
 
-function getTriangleArea(a, h) {
+var text = 'Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.';
+var dinosaur = 'triceratops';
+var dinosaurUpperCased = dinosaur.toUpperCase();
 
- if (a>0 || h>0) {
-		return a*h/2;
-} else {
-    return 'Nieprawidłowe dane';
+console.log(dinosaurUpperCased);
 
-}
+var textCharsAfter = text.replace('Velociraptor', 'triceratops');
 
-}
-getTriangleArea(10,6);
-console.log(getTriangleArea(-10,6));
-
-
-var triangle1Area = getTriangleArea(10,15);
-var triangle2Area = getTriangleArea(10,4);
-var triangle3Area = getTriangleArea(10,2);
+var partOfText = text.substr(0, 73);
+console.log(partOfText);
