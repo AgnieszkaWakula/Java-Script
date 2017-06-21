@@ -1,15 +1,12 @@
 // scripts.js
 
-function drawTree(height) {
-	for (var i=1 ; i<=height ; i++) {
-		var star = '';
+var withButtonClass = document.getElementsByClassName('button');
 
-		for (var j=1 ; j<=i ; j++) {
-			star += '*';
-		}
+console.log(withButtonClass);
 
-	console.log(star);
-	}
-	//return 'returnValue';
+for ( var n = 0 ; n <  withButtonClass.length ; n++) {
+  alert(withButtonClass[i].innerText);
 }
-drawTree(5);
+
+
+
