@@ -1,12 +1,13 @@
 // scripts.js
 
-var withButtonClass = document.getElementsByClassName('button');
+var list = document.getElementById('list'),
+var add = document.getElementById('addElem');
 
-console.log(withButtonClass);
-
-for ( var n = 0 ; n <  withButtonClass.length ; n++) {
-  alert(withButtonClass[n].innerText);
-}
-
+add.addEventListener('click', function() {
+	var element = document.createElement('li');
+	element.innerHTML = 'item';
+	var itemsByTagName = document.getElementsByTagName('li' length);
+	 list.appendChild(element);
+});
 
 
