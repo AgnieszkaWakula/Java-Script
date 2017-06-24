@@ -1,13 +1,14 @@
 // scripts.js
 
-var list = document.getElementById('list'),
+var list = document.getElementById('list');
 var add = document.getElementById('addElem');
 
 add.addEventListener('click', function() {
 	var element = document.createElement('li');
-	element.innerHTML = 'item';
-	var itemsByTagName = document.getElementsByTagName('li' length);
-	 list.appendChild(element);
+	var listElements = document.getElementsByTagName('li').length;
+	element.innerHTML = 'item' + listElements;
+
+	list.appendChild(element);
 });
 
 
