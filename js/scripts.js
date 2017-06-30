@@ -12,8 +12,9 @@ Button.prototype = {
 	this.$element.click(function() {
 		alert(self.text);
 	});
-	$('body').append(this.$element);
-	//this.$element.appendTo($('body'));
+	//$('body').append(this.$element);
+	this.$element.appendTo($('body'));
+	}
 }
 
 var btn1 = new Button('Hello!');
