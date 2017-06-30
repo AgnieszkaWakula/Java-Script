@@ -7,8 +7,8 @@ newGameBtn.addEventListener('click', newGame);
 
 //kliknięcie WYBORU GRACZA
 var pickRock = document.getElementById('js-playerPick_rock'),
-pickPaper = document.getElementById('js-playerPick_paper'),
-pickScissors = document.getElementById('js-playerPick_scissors');
+	pickPaper = document.getElementById('js-playerPick_paper'),
+	pickScissors = document.getElementById('js-playerPick_scissors');
 
 pickRock.addEventListener('click', function() { playerPick('rock') });
 pickPaper.addEventListener('click', function() { playerPick('paper') });
@@ -73,8 +73,8 @@ function playerPick(playerPick) {
 
 //Losowanie wyboru komputera
 function getComputerPick() {
-    var possiblePicks = ['rock', 'paper', 'scissors'];
-    return possiblePicks[Math.floor(Math.random()*3)];
+	var possiblePicks = ['rock', 'paper', 'scissors'];
+	return possiblePicks[Math.floor(Math.random()*3)];
 }
 
 //WYBÓR
@@ -112,7 +112,6 @@ function checkRoundWinner(playerPick, computerPick) {
 		computerResultElem.innerHTML = "Win!";
 		computer.score++;
 	}
-
 }
 
 function playerPick(playerPick) {
@@ -128,4 +127,9 @@ function playerPick(playerPick) {
 function setGamePoints() {
 	playerPointsElem.innerHTML = player.score;
 	computerPointsElem.innerHTML = computer.score;
+}
+
+//Zakończenie rozgrywki-funkcja, która sprawdzi, czy któryś z graczy zdobył 10 punktów.
+function winnerPlayer () {
+	
 }
