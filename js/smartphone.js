@@ -13,6 +13,7 @@ Phone.prototype.printInfo = function() {
 
 Phone.prototype.addVat = function (value) {
 	return this.price + (this.price * value / 100);
+}
 
 var iPhone6S = new Phone("Apple", 2250, "silver", "iOS 10", "1 GB");
 var SamsungGalaxyS6 = new Phone ("Samsung", 1600, "gold", "Android", "3 GB");
